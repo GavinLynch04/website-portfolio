@@ -12,7 +12,7 @@ function App() {
             ]}
             wrapper="span"
             className="name"
-            speed={50}
+            speed={250}
         />
 
 
