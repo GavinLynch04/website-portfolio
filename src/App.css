@@ -33,9 +33,21 @@
   }
 }
 
+@font-face {
+  font-family: nameFont;
+  src: url(./assets/Montreau-Regular.otf);
+}
+
 .card {
   padding: 2em;
 }
+
+.name  {
+  font-family: nameFont;
+  font-size: 8em;
+  display: inline-block;
+}
+
 
 .read-the-docs {
   color: #888;
