@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import './App.css'
 
@@ -14,7 +13,6 @@ function App() {
             wrapper="span"
             className="name"
             speed={50}
-            style={{ }}
         />
 
 
