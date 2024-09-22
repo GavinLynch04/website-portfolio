@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.navbar-brand {
+    color: #fff; /* White text */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 2rem; /* Space between links */
+}
+
+.navbar-links a {
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.navbar-links a:hover {
+    color: #00bcd4; /* Change color on hover */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

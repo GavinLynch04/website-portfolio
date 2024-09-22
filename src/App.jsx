@@ -1,23 +1,15 @@
-import { TypeAnimation } from 'react-type-animation';
-import './App.css'
+import './Styles/App.css'
+import MenuBar from './MenuBar';
+import NameAnimation from "./NameAnimation.jsx";
 
 function App() {
 
-  return (
-    <>
-        <TypeAnimation
-            sequence={[
-                'Gavin Lynch',
-                1000,
-            ]}
-            wrapper="span"
-            className="name"
-            speed={250}
-        />
-
-
-    </>
-  )
+    return (
+        <div>
+            <MenuBar/>
+            <NameAnimation/>
+        </div>
+    );
 }
 
 export default App

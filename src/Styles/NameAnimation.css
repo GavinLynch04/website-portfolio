@@ -1,0 +1,37 @@
+/* NameAnimation.css */
+.name-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;    /* Center content vertically */
+    height: 90vh;
+    width: 90vw;
+    position: relative;      /* Allows absolute positioning of child elements */
+}
+
+.typing-animation {
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: nameFont;
+    position: absolute; /* Position absolute to allow movement */
+    animation-name: move-up;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    top: 25%;
+    left: 25%;
+    animation-duration: 3s;
+    animation-delay: 3s; /* Delay before animation starts */
+}
+
+@keyframes move-up {
+    0% {
+        top: 25%; /* Move slightly up */
+        left: 25%;
+        font-size: 8rem;
+    }
+    100% {
+        top: -53px; /* Position at the top */
+        left: 15px; /* Position at the left */
+        transform: translate(0, 0); /* Reset translation */
+        font-size: 2rem; /* Shrink */
+    }
+}
