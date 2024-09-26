@@ -1,0 +1,76 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    animation-name: slideUp;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.about_head {
+    font-family: nameFont;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.head {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.about_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+.aboutText {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+about_tech {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    width: 40%;
+}
+
+.about_body {
+    width: 50%;
+    padding-right: 2rem
+}
+
+.about_tech button {
+    width: 120px;
+    height: 120px;
+    border: white 1px solid;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.5rem;
+    margin: 1rem 1rem;
+}
+
+.about_tech img {
+    width: 100%; /* Make image fill the button */
+    height: 100%; /* Make image fill the button */
+    object-fit: contain; /* Ensures the image covers the button area */
+    transition: transform 0.3s;
+}
+
+.about_tech button:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-20%);
+        opacity: 1;
+    }
+}

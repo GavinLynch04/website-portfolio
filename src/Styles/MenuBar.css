@@ -10,6 +10,11 @@
     animation-delay: 7s;
     animation-fill-mode: forwards;
     opacity: 0;
+
+    position: fixed;
+    width: 80%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar-brand {
@@ -26,17 +31,17 @@
 }
 
 .navbar-links li {
-    margin-left: 2rem; /* Space between links */
+    margin-left: 2rem;
 }
 
 .navbar-links a {
-    color: #fff; /* White text */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s; /* Smooth transition for hover */
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-    color: #00bcd4; /* Change color on hover */
+    color: #00bcd4;
 }
 
 @keyframes fade-in {
