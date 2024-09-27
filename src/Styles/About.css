@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    margin-top: 8rem;
 }
 .about_head {
     font-family: nameFont;
@@ -39,7 +40,7 @@ about_tech {
 }
 
 .about_body {
-    width: 50%;
+    width: 70%;
     padding-right: 2rem
 }
 
@@ -54,9 +55,9 @@ about_tech {
 }
 
 .about_tech img {
-    width: 100%; /* Make image fill the button */
-    height: 100%; /* Make image fill the button */
-    object-fit: contain; /* Ensures the image covers the button area */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     transition: transform 0.3s;
 }
 

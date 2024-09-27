@@ -1,5 +1,6 @@
 import './Styles/MenuBar.css';
 
+
 const MenuBar = () => {
     return (
         <nav className="navbar">

@@ -1,6 +1,14 @@
 import './Styles/About.css';
 import reactIcon from './assets/react.svg';
 import pythonIcon from './assets/python.png';
+import tensorflowIcon from './assets/tensorflow.png';
+import htmlIcon from './assets/html.png';
+import cssIcon from './assets/css.png';
+import jsIcon from './assets/javascript.png';
+import pytorchIcon from './assets/pytorch.png';
+import cIcon from './assets/c.png';
+import javaIcon from './assets/java.png';
+import mongoIcon from './assets/mongo.png';
 
 const About = () => {
     return (
@@ -26,13 +34,28 @@ const About = () => {
                         <img src={pythonIcon} alt="Python"/>
                     </button>
                     <button>
-                        <img src="/path/to/tensorflow-icon.png" alt="TensorFlow"/>
+                        <img src={tensorflowIcon} alt="TensorFlow"/>
                     </button>
                     <button>
-                        <img src="/path/to/js-icon.png" alt="JavaScript"/>
+                        <img src={htmlIcon} alt="HTML"/>
                     </button>
                     <button>
-                        <img src="/path/to/ml-icon.png" alt="Machine Learning"/>
+                        <img src={cssIcon} alt="CSS"/>
+                    </button>
+                    <button>
+                        <img src={jsIcon} alt="JavaScript"/>
+                    </button>
+                    <button>
+                        <img src={pytorchIcon} alt="PyTorch"/>
+                    </button>
+                    <button>
+                        <img src={cIcon} alt="C"/>
+                    </button>
+                    <button>
+                        <img src={javaIcon} alt="Java"/>
+                    </button>
+                    <button>
+                        <img src={mongoIcon} alt="MongoDB"/>
                     </button>
                 </div>
             </div>
