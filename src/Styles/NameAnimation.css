@@ -9,7 +9,7 @@
     animation-name: shrink;
     animation-fill-mode: forwards;
     animation-duration: 0.25s;
-    animation-delay: 6s;
+    animation-delay: 2.5s;
     z-index: 1005;
 }
 
@@ -17,27 +17,27 @@
     font-size: 8rem;
     font-weight: bold;
     font-family: nameFont;
-    position: absolute; /* Position absolute to allow movement */
+    position: absolute;
     animation-name: move-up;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    top: 25%;
+    top: 35%;
     left: 25%;
-    animation-duration: 3s;
-    animation-delay: 3s; /* Delay before animation starts */
+    animation-duration: 1s;
+    animation-delay: 1.5s;
 }
 
 @keyframes move-up {
     0% {
-        top: 25%; /* Move slightly up */
+        top: 35%;
         left: 25%;
         font-size: 8rem;
     }
     100% {
-        top: 0px; /* Position at the top */
-        left: 15px; /* Position at the left */
-        transform: translate(0, 0); /* Reset translation */
-        font-size: 2rem; /* Shrink */
+        top: 0;
+        left: 15px;
+        transform: translate(0, 0);
+        font-size: 2rem;
     }
 }
 

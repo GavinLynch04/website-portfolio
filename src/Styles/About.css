@@ -5,11 +5,10 @@
     opacity: 0;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 8s;
+    animation-delay: 3s;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    margin-top: 8rem;
 }
 .about_head {
     font-family: nameFont;
@@ -24,24 +23,25 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1800px;
 }
 .aboutText {
     font-family: "Roboto";
     font-size: 1.2rem;
+    text-align: justify;
     line-height: 1.6;
 }
 
-about_tech {
+.about_tech {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 1rem;
-    width: 40%;
+    width: 50%;
 }
 
 .about_body {
-    width: 70%;
-    padding-right: 2rem
+    width: 50%;
+    padding-right: 2rem;
 }
 
 .about_tech button {
@@ -51,7 +51,7 @@ about_tech {
     cursor: pointer;
     background-color: transparent;
     padding: 0.5rem;
-    margin: 1rem 1rem;
+    margin: 1rem 0;
 }
 
 .about_tech img {
@@ -71,7 +71,24 @@ about_tech {
         opacity: 0;
     }
     to {
-        transform: translateY(-20%);
+        transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about_content {
+        flex-direction: column; /* Stack the body and tech sections vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    .about_body {
+        width: 100%; /* Make the about body take up full width */
+        padding-right: 0; /* Remove the padding */
+    }
+
+    .about_tech {
+        width: 100%; /* Make the tech section take up full width */
+        margin-top: 2rem; /* Add space between the body and tech buttons */
     }
 }
