@@ -62,7 +62,7 @@
 }
 
 .about_tech button:hover img {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1);
 }
 
 @keyframes slideUp {
@@ -78,17 +78,22 @@
 
 @media (max-width: 1000px) {
     .about_content {
-        flex-direction: column; /* Stack the body and tech sections vertically */
-        align-items: center; /* Center align the content */
+        flex-direction: column;
+        align-items: center;
     }
 
     .about_body {
-        width: 100%; /* Make the about body take up full width */
-        padding-right: 0; /* Remove the padding */
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .aboutText {
+        font-size: 5vw;
     }
 
     .about_tech {
-        width: 100%; /* Make the tech section take up full width */
-        margin-top: 2rem; /* Add space between the body and tech buttons */
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
     }
 }
