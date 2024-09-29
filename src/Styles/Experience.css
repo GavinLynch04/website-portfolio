@@ -1,0 +1,99 @@
+.job-experience {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+.job-experience h2 {
+    font-family: 'nameFont', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+    overflow-y: auto;
+    border-left: 4px solid #ccc;
+    scrollbar-width: thin;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    width: 90%;
+}
+
+.timeline-content {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: darkslategray;
+    max-width: 600px;
+    text-align: left;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: lavender;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.description {
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: white;
+    text-align: right;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.timeline h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+    text-align: left;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

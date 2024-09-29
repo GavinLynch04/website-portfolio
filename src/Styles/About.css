@@ -36,11 +36,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 1rem;
-    width: 50%;
+    width: 47%;
 }
 
 .about_body {
-    width: 50%;
+    width: 47%;
     padding-right: 2rem;
 }
 

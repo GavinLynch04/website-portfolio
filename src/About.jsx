@@ -7,8 +7,7 @@ import cssIcon from './assets/css.png';
 import jsIcon from './assets/javascript.png';
 import pytorchIcon from './assets/pytorch.png';
 import cIcon from './assets/c.png';
-import javaIcon from './assets/java.png';
-import mongoIcon from './assets/mongo.png';
+
 
 const About = () => {
     return (
@@ -50,12 +49,6 @@ const About = () => {
                     </button>
                     <button>
                         <img src={cIcon} alt="C"/>
-                    </button>
-                    <button>
-                        <img src={javaIcon} alt="Java"/>
-                    </button>
-                    <button>
-                        <img src={mongoIcon} alt="MongoDB"/>
                     </button>
                 </div>
             </div>
