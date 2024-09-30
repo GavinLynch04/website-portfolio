@@ -32,7 +32,6 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
-    padding-left: 1rem;
     width: 90%;
 }
 
@@ -96,5 +95,11 @@
     to {
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .timeline-item {
+        width: 100%;
     }
 }
