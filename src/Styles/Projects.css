@@ -3,6 +3,12 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    justify-content: center;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
 }
 
 .project {
@@ -14,6 +20,12 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h2 {
+    font-family: 'nameFont', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .project-screenshot {
@@ -35,7 +47,7 @@
 .project-info p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #666;
+    color: lightgray;
 }
 
 .project-links {
@@ -51,4 +63,15 @@
 
 .project-links a:hover {
     color: #0056b3;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
