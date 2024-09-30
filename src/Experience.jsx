@@ -23,23 +23,25 @@ const experiences = [
 
 const JobExperience = () => {
     return (
-        <div className="job-experience">
-            <h2>Job Experience</h2>
-            <div className="timeline">
-                {experiences.map((experience, index) => (
-                    <div className="timeline-item" key={index}>
-                        <div className="timeline-content">
-                            <div className="title-date">
-                                <h3>{experience.title}</h3>
-                                <p className="date">{experience.date}</p>
+        <section id="experience">
+            <div className="job-experience">
+                <h2>Job Experience</h2>
+                <div className="timeline">
+                    {experiences.map((experience, index) => (
+                        <div className="timeline-item" key={index}>
+                            <div className="timeline-content">
+                                <div className="title-date">
+                                    <h3>{experience.title}</h3>
+                                    <p className="date">{experience.date}</p>
+                                </div>
+                                <h4>{experience.company}</h4>
+                                <p className="description">{experience.description}</p>
                             </div>
-                            <h4>{experience.company}</h4>
-                            <p className="description">{experience.description}</p>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

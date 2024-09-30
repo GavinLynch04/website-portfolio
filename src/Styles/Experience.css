@@ -1,9 +1,10 @@
 .job-experience {
-    width: 100%;
     padding: 2rem;
     text-align: center;
     animation-name: slideUp;
     animation-duration: 1s;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-delay: 3s;
@@ -11,7 +12,7 @@
 
 .job-experience h2 {
     font-family: 'nameFont', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
