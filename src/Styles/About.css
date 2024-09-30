@@ -27,7 +27,7 @@
 }
 .aboutText {
     font-family: "Roboto";
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
     line-height: 1.6;
 }
@@ -88,7 +88,7 @@
     }
 
     .aboutText {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .about_tech {
