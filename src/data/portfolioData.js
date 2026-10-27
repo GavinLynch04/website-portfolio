@@ -2,6 +2,7 @@ export const personalInfo = {
   email: 'gavinlynch04@gmail.com',
   github: 'https://github.com/GavinLynch04',
   linkedin: 'https://linkedin.com/in/gavinmlynch',
+  resume: '/GavinLynchResume.pdf',
 };
 
 export const projects = [
@@ -25,7 +26,7 @@ export const projects = [
   {
     id: 'wavepoint',
     title: 'Wavepoint Health',
-    description: 'Proprietary internal software for healthcare, built as part of my work at Wavepoint Health.',
+    description: 'Internal tools I work on at Wavepoint Health. The code is proprietary, so there’s nothing public to link to beyond the company itself.',
     context: 'Proprietary · Internal software',
     links: [
       { label: 'Website', url: 'https://www.wavepointhealth.com' },

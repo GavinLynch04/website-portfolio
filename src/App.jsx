@@ -1,6 +1,22 @@
+import { useState } from 'react';
 import { experiences, projects, personalInfo } from './data/portfolioData';
 
+function getInitialTheme() {
+  const saved = document.documentElement.dataset.theme;
+  if (saved) return saved;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
 function App() {
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch { /* storage unavailable */ }
+  };
+
   return (
     <div className="portfolio">
       <a className="skip-link" href="#main">Skip to content</a>
@@ -10,6 +26,14 @@ function App() {
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
+          </button>
         </nav>
       </header>
 
@@ -18,13 +42,17 @@ function App() {
           <p className="eyebrow">Software engineer · San Luis Obispo, CA</p>
           <h1 id="intro-title">Gavin Lynch</h1>
           <p className="intro-copy">I build software and work with data sometimes.</p>
-          <a className="text-link intro-link" href={personalInfo.github}>GitHub <span aria-hidden="true">↗</span></a>
+          <div className="intro-links">
+            <a className="text-link intro-link" href={personalInfo.github}>GitHub <span aria-hidden="true">↗</span></a>
+            <a className="text-link intro-link" href={personalInfo.linkedin}>LinkedIn <span aria-hidden="true">↗</span></a>
+            <a className="text-link intro-link" href={personalInfo.resume}>Résumé <span aria-hidden="true">↗</span></a>
+          </div>
         </section>
 
         <section className="section" id="work" aria-labelledby="work-title">
           <div className="section-heading">
             <h2 id="work-title">Selected work</h2>
-            <span className="section-note">Code & research</span>
+            <span className="section-note">Projects & research</span>
           </div>
           <div className="project-list">
             {projects.map((project, index) => (
@@ -87,6 +115,7 @@ function App() {
         <div>
           <a href={personalInfo.github}>GitHub <span aria-hidden="true">↗</span></a>
           <a href={personalInfo.linkedin}>LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href={personalInfo.resume}>Résumé <span aria-hidden="true">↗</span></a>
         </div>
       </footer>
     </div>
