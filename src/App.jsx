@@ -17,7 +17,7 @@ function App() {
         <section className="intro" aria-labelledby="intro-title">
           <p className="eyebrow">Software engineer · San Luis Obispo, CA</p>
           <h1 id="intro-title">Gavin Lynch</h1>
-          <p className="intro-copy">I build software and work with data. My interests sit somewhere between machine learning, biology, and making things run a little faster.</p>
+          <p className="intro-copy">I build software and work with data sometimes.</p>
           <a className="text-link intro-link" href={personalInfo.github}>GitHub <span aria-hidden="true">↗</span></a>
         </section>
 
@@ -71,7 +71,7 @@ function App() {
           <h2 id="about-title">A little about me</h2>
           <div className="about-copy">
             <p>I studied computer science at Cal Poly, where my research focused on applying machine learning to genetics. I enjoy work that brings software and science together.</p>
-            <p>Away from my desk, I’m usually trail running, skiing, or playing chess.</p>
+            <p>Away from my desk, I’m usually trail running, skiing, or in the mountains.</p>
             <p className="education">Cal Poly, San Luis Obispo<br />M.S. Computer Science, 2026 · B.S. Computer Science, 2025</p>
           </div>
         </section>

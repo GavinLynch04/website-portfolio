@@ -23,13 +23,12 @@ export const projects = [
     links: [],
   },
   {
-    id: 'quicksplit',
-    title: 'QuickSplit',
-    description: 'A receipt-scanning app that helps friends split a bill, down to the individual items.',
-    context: 'React · JavaScript',
+    id: 'wavepoint',
+    title: 'Wavepoint Health',
+    description: 'Proprietary internal software for healthcare, built as part of my work at Wavepoint Health.',
+    context: 'Proprietary · Internal software',
     links: [
-      { label: 'Code', url: 'https://github.com/GavinLynch04/CSC307-Receipt-App' },
-      { label: 'Demo', url: 'https://www.youtube.com/watch?v=ARngas-FN1k&t=102s' },
+      { label: 'Website', url: 'https://www.wavepointhealth.com' },
     ],
   },
 ];
